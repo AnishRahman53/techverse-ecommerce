@@ -13,6 +13,7 @@ function Home() {
 
   setProducts(res.data);
 };
+
   const addToCart = () => {
     setCartCount((prev) => prev + 1);
   };
