@@ -7,9 +7,12 @@ function Home() {
   const [cartCount, setCartCount] = useState(0);
 
   const fetchProducts = async () => {
-    const res = await axios.get(
-      "http://localhost:5000/api/products"
-    );
+  const res = await axios.get(
+    "https://techverse-ecommerce.onrender.com/api/products"
+  );
+
+  setProducts(res.data);
+};
 
     setProducts(res.data);
   };
